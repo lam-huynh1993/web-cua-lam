@@ -3,26 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web của Lâm</title>
+<title>Taxi Cà Mau 24/7 - 0855.605.606</title>
 <style>
-body{font-family:sans-serif;margin:0;background:#0f172a;color:white;text-align:center}
-header{padding:80px 20px}
-h1{font-size:48px;margin:0;color:#38bdf8}
-p{font-size:20px;color:#cbd5e1}
-a.btn{display:inline-block;margin-top:30px;padding:15px 30px;background:#38bdf8;color:#0f172a;text-decoration:none;border-radius:30px;font-weight:bold;font-size:18px}
-.box{background:white;color:#0f172a;margin:40px 20px;padding:30px;border-radius:20px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+.header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:3px solid #FFC700;display:flex;justify-content:space-between;padding:12px 16px;align-items:center}
+.btn-call{background:#EF4444;color:#fff;padding:10px 18px;border-radius:999px;font-weight:800;text-decoration:none;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.hero{background:#111827;color:#fff;padding:50px 16px}
+.hero h1{font-size:48px;font-weight:900;line-height:1.1}.hero h1 span{color:#FFC700}
+.cta-primary{background:#FFC700;color:#000;padding:16px 28px;border-radius:999px;font-weight:900;font-size:18px;text-decoration:none;display:inline-flex;margin-top:20px}
+.floating{position:fixed;bottom:16px;right:16px;z-index:99;display:flex;flex-direction:column;gap:10px}
+.float-btn{padding:14px 20px;border-radius:999px;font-weight:900;text-decoration:none;display:flex;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.float-call{background:#EF4444;color:#fff}.float-zalo{background:#0084FF;color:#fff}
+.card{border:2px solid #eee;border-radius:20px;padding:20px}
 </style>
 </head>
 <body>
-<header>
-<h1>Xin chào, mình là Lâm!</h1>
-<p>Đây là website đầu tiên của mình tạo bằng GitHub & Netlify.</p>
-<a class="btn" href="#">Liên hệ mình</a>
-</header>
-<div class="box">
-<h2>🎉 Chúc mừng!</h2>
-<p>Web của bạn đã hoạt động thành công!</p>
-<p>Bạn đang ở Cà Mau - Thới Bình</p>
+<div class="header">
+  <b>🚕 TAXI CÀ MAU</b>
+  <a href="tel:0855605606" class="btn-call">📞 0855.605.606</a>
+</div>
+<div class="hero">
+  <h1>Taxi Cà Mau<br><span>Có Mặt Sau 5 Phút</span></h1>
+  <p style="color:#D1D5DB;margin-top:12px">Phục vụ 24/7 - Giá rẻ - Xe đời mới - Gọi là có xe</p>
+  <a href="tel:0855605606" class="cta-primary">📞 GỌI NGAY 0855.605.606</a>
+</div>
+
+<div style="max-width:1100px;margin:0 auto;padding:24px 16px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+  <div class="card"><h3>🚗 4 chỗ</h3><p>Từ 12k/km</p></div>
+  <div class="card"><h3>🚐 7 chỗ</h3><p>Từ 15k/km</p></div>
+  <div class="card"><h3>✈️ Sân bay</h3><p>Trọn gói 80k-150k</p></div>
+  <div class="card"><h3>💍 Hợp đồng</h3><p>Giá thỏa thuận</p></div>
+</div>
+
+<div style="background:#111827;color:#fff;padding:30px 16px;text-align:center">
+  <div style="font-size:22px;font-weight:900">🚕 TAXI CÀ MAU 24/7</div>
+  <a href="tel:0855605606" style="font-size:36px;font-weight:900;color:#FFC700;text-decoration:none">0855.605.606</a>
+  <p style="color:#9CA3AF;margin-top:8px">TP. Cà Mau - Đầm Dơi - Cái Nước - Năm Căn - Ngọc Hiển...</p>
+</div>
+
+<div class="floating">
+  <a href="https://zalo.me/0855605606" class="float-btn float-zalo">💬 Zalo</a>
+  <a href="tel:0855605606" class="float-btn float-call">📞 GỌI TAXI 0855.605.606</a>
 </div>
 </body>
 </html>
